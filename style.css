@@ -1,0 +1,38 @@
+ body {
+    margin: 0;
+    background-image: linear-gradient(to right,orange,purple);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#container{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    width:25%;
+    height: 700px;
+    transform: translate(-50%, -50%);
+    border:2px solid;
+    border-radius: 15px;
+    box-sizing:border-box;
+    min-width: 400px;
+    min-height: 600px; 
+    max-width: 600px; 
+    max-height: 900px; 
+    overflow: hidden;
+}
+
+#screen{
+    border: 2px solid;
+    height: 20%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#numPad{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
