@@ -112,4 +112,26 @@ document.querySelector('#clearScreen').addEventListener('click', function() {
     operator = ''
 });
 
+document.querySelector('#delete').addEventListener('click', function() {
+    if (operator === '') {
+        firstNum = firstNum.slice(0, -1);
+    } else {
+        secondNum = secondNum.slice(0, -1);
+    }
+    updateDisplay();
+});
+
+document.querySelector('#decimal').addEventListener('click', function() {
+    if (operator === '') {
+        if (!firstNum.includes('.')) {
+            firstNum += '.';
+        }
+    } else {
+        if (!secondNum.includes('.')) {
+            secondNum += '.';
+        }
+    }
+    updateDisplay();
+});
+
 
